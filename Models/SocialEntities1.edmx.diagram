@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2b1fa520adad482ab3629fd775ba25ff" Name="Diagram1">
+        <EntityTypeShape EntityType="SocialModel.Admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.BlockUser" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Comment" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Conversation" Width="1.5" PointX="3.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Delievery" Width="1.5" PointX="6" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Friend" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Help" Width="1.5" PointX="3" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Log" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Message" Width="1.5" PointX="6" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Participant" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Status" Width="1.5" PointX="3" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Table" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.TempUser" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.Test" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SocialModel.User" Width="1.5" PointX="0.75" PointY="10.875" IsExpanded="true" />
+        <AssociationConnector Association="SocialModel.FK_BlockUser_B_Status_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_BlockUser_B_User_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Comments_C_Status_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Comments_C_User_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Delievery_D_Conversation_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Message_M_Conversation_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Participants_P_Conversation_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Delievery_D_Message_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Delievery_D_Receiver_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Friend_Friend_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Friend_User_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Help_HUser_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Message_M_Sender_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Participants_P_User_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="SocialModel.FK_Status_S_User_Id" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
